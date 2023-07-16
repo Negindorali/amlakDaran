@@ -16,7 +16,21 @@ const routes = [
         name: "register.form",
         props: true,
         meta: {transition: 'slide-down'},
-        component: () => import("@/views/pages/register/form")
+        component: () => import("@/views/pages/registerForm")
+      },
+      {
+        path: "/user/list",
+        name: "user.list",
+        props: true,
+        meta: {transition: 'slide-down'},
+        component: () => import("@/views/pages/userList")
+      },
+      {
+        path: "/user/:id",
+        name: "user.list",
+        props: true,
+        meta: {transition: 'slide-down'},
+        component: () => import("@/views/pages/userList")
       },
     ]
 

@@ -1,0 +1,38 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    font-family: Vazir, serif;
+    letter-spacing: unset !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('@/../public/fonts/Vazir-Regular.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: rYekan;
+    src: url("@/../public/fonts/yeknBakh/Yekan Bakh FaNum 04 Regular.woff") format('woff');
+    src: url("@/../public/fonts/yeknBakh/Yekan Bakh FaNum 04 Regular.eot");
+    src: url("@/../public/fonts/yeknBakh/Yekan Bakh FaNum 04 Regular.ttf") format('truetype');
+}
+
+body, #app {
+    background-image: linear-gradient(180deg, #DAE6FC 0%, #E4ECF9 100%) !important
+}
+
+.formText {
+    font-weight: bolder;
+    font-family: rYekan !important;
+}

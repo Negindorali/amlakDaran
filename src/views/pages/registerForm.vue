@@ -39,6 +39,7 @@ export default {
                 this.userList = JSON.parse(localStorage.getItem('usersList')) || [];
                 this.userList.push(this.userData);
                 localStorage.setItem('usersList', JSON.stringify(this.userList));
+                this.$toast.success('اطلاعات شما با موفقیت ثبت شد.');
                 this.$router.replace({name: 'user.list'})
             }
         },
@@ -61,6 +62,8 @@ export default {
             const list = JSON.parse(localStorage.getItem('usersList'));
             list[this.$route.params.index] = this.userData;
             localStorage.setItem('usersList',JSON.stringify(list));
+            this.$toast.success('اطلاعات شما با موفقیت به روزرسانی شد.');
+            this.$router.replace({name: 'user.list'});
         }
     },
 

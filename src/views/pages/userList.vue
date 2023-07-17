@@ -55,6 +55,7 @@ export default {
     methods: {
         deleteUser(id) {
             this.userList.splice(id, 1);
+            this.$toast.success('اطلاعات موردنظرشما با موفقیت حذف شد.');
             localStorage.setItem('usersList', JSON.stringify(this.userList));
         },
         getUserData(data, index) {

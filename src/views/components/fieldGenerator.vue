@@ -142,10 +142,11 @@ export default {
         },
         'data.bankAccountNumber': {
             handler(val) {
-                if (val.length < 18) {
-                    // eslint-disable-next-line no-unused-vars
-                    this.fields[4].errorMessage = 'شماره حساب بانکی نباید از ۱۸ رقم کمتر باشد.';
-                } else this.fields[4].errorMessage = null
+                let message = null;
+                if (val.length < 18)
+                    message = 'شماره حساب بانکی نباید از ۱۸ رقم کمتر باشد.';
+
+                this.fields[4].errorMessage = message;
             }
 
         },
